@@ -12,9 +12,9 @@
         </div>
         <div class="footer-section">
           <h3>联系我们</h3>
-          <p>电话：400-123-4567</p>
-          <p>邮箱：contact@example.com</p>
-          <p>地址：北京市朝阳区xxx大厦</p>
+          <p>电话：18156992100</p>
+          <p>邮箱：xiaweifeng@live.cn</p>
+          <p>地址：安徽省合肥市经济技术开发区5F创客空间</p>
         </div>
         <div class="footer-section">
           <h3>关注我们</h3>
@@ -26,8 +26,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2024 您的公司名称. 保留所有权利.</p>
-        <p><a href="https://beian.miit.gov.cn/" target="_blank">京ICP备XXXXXXXX号-1</a></p>
+        <p>© 2025 安徽飞沃信息科技有限公司. 保留所有权利.</p>
+        <p><a href="https://beian.miit.gov.cn/" target="_blank">皖ICP备56997632号-1</a></p>
       </div>
     </div>
   </footer>

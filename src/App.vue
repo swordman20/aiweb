@@ -14,14 +14,14 @@ import TheFooter from '@/components/TheFooter.vue'
 import { useHead } from '@vueuse/head'
 
 useHead({
-  title: '默认标题',
-  titleTemplate: '%s | 您的网站名称',
+  title: '官网',
+  titleTemplate: '%s | 安徽飞沃信息科技有限公司',
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { name: 'description', content: '您的网站默认描述' },
-    { property: 'og:title', content: '默认标题' },
-    { property: 'og:description', content: '您的网站默认描述' },
+    { name: 'description', content: '基础软件服务，物联网应用服务，专业平台软件开发。' },
+    { property: 'og:title', content: '安徽飞沃科技' },
+    { property: 'og:description', content: '基础软件服务，物联网应用服务，专业平台软件开发。' },
     { property: 'og:type', content: 'website' },
     { name: 'robots', content: 'index,follow' }
   ]

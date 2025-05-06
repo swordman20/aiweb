@@ -22,22 +22,22 @@
           <div class="info-card">
             <i class="fas fa-map-marker-alt"></i>
             <h3>公司地址</h3>
-            <p>北京市朝阳区科技园区88号</p>
-            <p>邮编：100020</p>
+            <p>安徽省合肥市经济技术开发区5F创客空间</p>
+            <p>邮编：230000</p>
           </div>
 
           <div class="info-card">
             <i class="fas fa-phone"></i>
             <h3>联系电话</h3>
-            <p>销售热线：400-123-4567</p>
-            <p>技术支持：010-88888888</p>
+            <p>销售热线：18156992100</p>
+            <p>技术支持QQ：769313759</p>
           </div>
 
           <div class="info-card">
             <i class="fas fa-envelope"></i>
             <h3>电子邮箱</h3>
-            <p>商务合作：business@company.com</p>
-            <p>技术支持：support@company.com</p>
+            <p>商务合作：xiaweifeng@live.cn</p>
+            <p>技术支持：tommyifeng@gmail.com</p>
           </div>
 
           <div class="info-card">
@@ -119,11 +119,7 @@
       <div class="map-section">
         <h2>公司位置</h2>
         <div class="map-container">
-          <!-- 这里可以集成百度地图或高德地图 -->
-          <div class="map-placeholder">
-            <i class="fas fa-map"></i>
-            <p>地图加载中...</p>
-          </div>
+          <div id="amap-container"></div>
         </div>
       </div>
     </div>
@@ -132,6 +128,65 @@
 
 <script setup>
 import { useHead } from '@vueuse/head'
+import { onMounted, ref } from 'vue'
+
+// 公司地址信息
+const companyAddress = ref('安徽省合肥市经济技术开发区5F创客空间')
+const companyPosition = ref([117.206482, 31.776565]) // 经纬度坐标，请根据实际位置调整
+
+// 初始化地图
+const initMap = () => {
+  // 确保AMap已加载
+  if (window.AMap) {
+    // 创建地图实例
+    const map = new window.AMap.Map('amap-container', {
+      zoom: 15,
+      center: companyPosition.value,
+    })
+
+    // 添加标记点
+    const marker = new window.AMap.Marker({
+      position: companyPosition.value,
+      title: companyAddress.value,
+    })
+    map.add(marker)
+
+    // 添加信息窗体
+    const infoWindow = new window.AMap.InfoWindow({
+      content: `<div class="info-window">
+                  <h3>公司地址</h3>
+                  <p>${companyAddress.value}</p>
+                </div>`,
+      offset: new window.AMap.Pixel(0, -30)
+    })
+
+    // 点击标记时打开信息窗体
+    marker.on('click', () => {
+      infoWindow.open(map, marker.getPosition())
+    })
+
+    // 默认打开信息窗体
+    infoWindow.open(map, marker.getPosition())
+  }
+}
+
+// 加载高德地图API
+const loadAMapScript = () => {
+  if (window.AMap) {
+    initMap()
+    return
+  }
+
+  const script = document.createElement('script')
+  script.src = 'https://webapi.amap.com/maps?v=2.0&key=88f8067596e552e821541f3ff0b550aa&plugin=AMap.InfoWindow'
+  script.async = true
+  script.onload = initMap
+  document.head.appendChild(script)
+}
+
+onMounted(() => {
+  loadAMapScript()
+})
 
 useHead({
   title: '联系我们',
@@ -325,18 +380,25 @@ export default {
   overflow: hidden;
 }
 
-.map-placeholder {
+#amap-container {
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #718096;
 }
 
-.map-placeholder i {
-  font-size: 3em;
-  margin-bottom: 10px;
+.info-window {
+  padding: 10px;
+  max-width: 200px;
+}
+
+.info-window h3 {
+  margin: 0 0 5px 0;
+  color: #2d3748;
+  font-size: 16px;
+}
+
+.info-window p {
+  margin: 0;
+  color: #718096;
 }
 
 /* 响应式设计 */
@@ -357,4 +419,4 @@ export default {
     height: 300px;
   }
 }
-</style> 
+</style>

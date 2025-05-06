@@ -46,18 +46,18 @@
           <h2>我们的团队</h2>
           <div class="team-grid">
             <div class="team-member">
-              <img src="/images/head01.png" alt="团队成员1">
-              <h3>张三</h3>
+              <img src="/images/CEO-head.jpeg" alt="团队成员1">
+              <h3>夏伟锋</h3>
               <p>首席执行官</p>
             </div>
             <div class="team-member">
-              <img src="/images/head01.png" alt="团队成员2">
-              <h3>李四</h3>
+              <img src="/images/IT-head.jpeg" alt="团队成员2">
+              <h3>张启</h3>
               <p>技术总监</p>
             </div>
             <div class="team-member">
-              <img src="/images/head01.png" alt="团队成员3">
-              <h3>王五</h3>
+              <img src="/images/PM-head.jpeg" alt="团队成员3">
+              <h3>高慧敏</h3>
               <p>产品经理</p>
             </div>
           </div>
@@ -71,15 +71,15 @@
           <div class="contact-info">
             <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
-              <p>地址：北京市朝阳区科技园区88号</p>
+              <p>地址：安徽省合肥市经济技术开发区5F创客空间</p>
             </div>
             <div class="contact-item">
               <i class="fas fa-phone"></i>
-              <p>电话：010-88888888</p>
+              <p>18156992100</p>
             </div>
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
-              <p>邮箱：contact@company.com</p>
+              <p>邮箱：xiaweifeng@live.cn</p>
             </div>
           </div>
         </div>

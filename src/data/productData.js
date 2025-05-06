@@ -38,7 +38,7 @@ export const productList = [
     category: 'AI智能产品',
     description: '基于深度学习的智能语音助手，支持多语言交互和自然语言理解',
     price: '2999',
-    image: '/images/good01.png',
+    image: '/images/good-voice.jpeg',
     features: ['语音识别', '自然语言处理', '多语言支持'],
     specifications: {
       '处理器': 'AI专用芯片',
@@ -53,7 +53,7 @@ export const productList = [
     category: '数据分析',
     description: '一站式数据分析平台，支持数据采集、清洗、分析和可视化',
     price: '5999',
-    image: '/images/good01.png',
+    image: '/images/good-data.jpg',
     features: ['数据采集', '实时分析', '可视化报表'],
     specifications: {
       '处理能力': '每秒10万条数据',
@@ -67,7 +67,7 @@ export const productList = [
     category: '云计算服务',
     description: '高性能云服务器，支持弹性扩展和按需付费',
     price: '199',
-    image: '/images/good01.png',
+    image: '/images/good-server.jpeg',
     features: ['弹性扩展', '按需付费', '高可用性'],
     specifications: {
       'CPU': '4核',
@@ -82,7 +82,7 @@ export const productList = [
     category: '安全防护',
     description: '新一代智能防火墙，提供全方位的网络安全防护',
     price: '3999',
-    image: '/images/good01.png',
+    image: '/images/good-firewall.png',
     features: ['入侵检测', 'DDoS防护', 'Web安全'],
     specifications: {
       '防护能力': '10Gbps',

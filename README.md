@@ -1,7 +1,6 @@
 # Vue3 + Vite + Vuetify 企业级前端框架
 
 <div align="center">
-
 ![Vue](https://img.shields.io/badge/Vue-3.x-4FC08D?logo=vue.js)
 ![Vite](https://img.shields.io/badge/Vite-3.x-646CFF?logo=vite)
 ![Vuetify](https://img.shields.io/badge/Vuetify-3.x-1867C0?logo=vuetify)
@@ -9,7 +8,7 @@
 
 一个基于 Vue3 + Vite + Vuetify 的现代化企业级前端框架，提供丰富的组件和功能，助力快速开发。
 
-[在线演示](https://your-demo-url.com) | [文档](https://your-docs-url.com)
+[在线演示](https://www.feiwow.com) | [文档](https://www.feiwow.com)
 
 </div>
 
@@ -90,27 +89,10 @@ npm run build
 本项目采用自定义许可证：
 
 - 个人使用：免费
-- 商业使用：需要授权
-- 二次开发：需要授权
-
-### 授权说明
-
-如需商业使用或二次开发授权，请联系作者：
-
-- 邮箱：aidevelop@126.com
 
 ## 🤝 贡献指南
 
 欢迎提交 Issue 和 Pull Request 来帮助改进项目。
-
-## 📞 联系方式
-
-- 邮箱：aidevelop@126.com
-- 项目主页：[GitHub](https://github.com/aidevelopcn/aiweb)
-
-## 🙏 致谢
-
-感谢所有为这个项目做出贡献的开发者们！
 
 ---
 

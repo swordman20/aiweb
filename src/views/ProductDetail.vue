@@ -184,13 +184,20 @@ useHead({
 
 .product-gallery {
   border-radius: 10px;
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 比例 */
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .product-gallery img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
